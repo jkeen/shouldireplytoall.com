@@ -354,6 +354,18 @@ div.attack p.caption {
     height:320px;
   }
 }
+@media only screen and (max-device-width: 1024px) and (orientation:portrait) { 
+  div.panel {
+    height:1024px;
+    width:100%;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (orientation:landscape) { 
+  div.panel {
+    height:768px;
+    width:100%;
+  }
+}
 
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }

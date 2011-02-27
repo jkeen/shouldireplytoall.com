@@ -134,11 +134,18 @@ header h1 a {
 
 header h1 span {
   float:right;
+  color:#333;
 }
 
 header h1 a:hover {
   color:#FFF;
 }
+
+.touch header {
+  position:static;
+  height:auto;
+}
+
 
 div.panel {
   position:relative;
@@ -152,11 +159,8 @@ div.panel div.inner{
 
 div.panel p.click-hint {
   text-align:center;
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:40px;
 }
+
 div.panel p.click-hint span{
   display:inline-block;
   padding:5px;
@@ -177,7 +181,10 @@ div.question {
 }
 
 div.question div.inner {
-  padding-top:20%;
+  position:absolute;
+  top:30%;
+  left:0;
+  right:0;
 }
 
 div.question h2 {
@@ -203,10 +210,17 @@ div.question:hover h1 {
 }
 
 div.answer {
- padding-top:5%;
  background-color:#FFF;
  color:#000;
 }
+
+div.answer div.inner {
+  position:absolute;
+  top:15%;
+  left:0;
+  right:0;
+}
+
 div.answer h2 {
  color:#000;
  text-align:center;
@@ -215,7 +229,6 @@ div.answer h2 {
  font-family:"League", Helvetica;
  text-transform:uppercase;
  position:relative;
-/*  top:-110px;*/
  margin:0;
  padding:0;
  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
@@ -252,7 +265,7 @@ div.reasons p em {
 div.reasons div.inner {
  margin-left:auto;
  margin-right:auto;
- width:800px;
+ width:90%;
 }
 
 div.photo {
@@ -263,7 +276,7 @@ div.photo {
 div.photo p.caption {
   font-weight:bold;
   font-family:"Goudy";
-  font-size:40px;
+  font-size:5em;
   color:#FFF;
   width:400px;
   margin-left:auto;
@@ -285,8 +298,13 @@ div.photo p.attribution a {
 
 div.fire {
   background-color:#000;
-  background-image: url(http://farm4.static.flickr.com/3262/2614591735_cbe162530f_b.jpg);
+  background-image: url(../images/fire.jpg);
 }
+div.fire p.caption{
+  color:#FFF;
+  text-shadow:1px 1px 3px #000;
+}
+
 
 div.attack {
   background-color:#FFF;
@@ -296,6 +314,7 @@ div.attack {
 div.attack p.caption {
   padding-top:200px;
   color:#000;
+  text-shadow:1px 1px 3px #FFF;
 }
 
 @media all and (orientation:portrait) { 
@@ -306,20 +325,17 @@ div.attack p.caption {
   
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     padding:0;
     margin:0;
-    font-size:25%;
+    font-size:30%;
   }
   header {
-    position:static;
-    height:auto;
-  }
-  header {
-    display:none;
+    font-size:2em;
   }
   div.photo p.caption {
+    font-size:9em;
     width:auto;
   }
   div.reasons div.inner {
@@ -341,26 +357,46 @@ div.attack p.caption {
 /*   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
+/* iPhone Common */
+@media screen and (max-device-width: 480px) {
+  
+}
+
+/* iPhone portrait */
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
   div.panel {
+    display:block;
     width:100%;
-    height:460px;
+    height:420px;
+  }
+  
+  div.panel p.click-hint {
+    text-align:center;
   }
 }
 
+/* iPhone landscape */
 @media screen and (max-device-width: 480px) and (orientation:landscape) {
   div.panel {
     width:100%;
-    height:320px;
+    height:280px;
+  }
+  
+  div.reasons div.inner {
+    padding-top:10px;
   }
 }
-@media only screen and (max-device-width: 1024px) and (orientation:portrait) { 
+
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) { 
   div.panel {
     height:1024px;
     width:100%;
   }
 }
-@media only screen and (max-device-width: 1024px) and (orientation:landscape) { 
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) { 
   div.panel {
     height:768px;
     width:100%;

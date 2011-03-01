@@ -81,20 +81,10 @@ button {  width: auto; overflow: visible; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
- /* Primary Styles
-    Author: 
- */
-
 @font-face { 
  font-family: 'League'; 
  src: url('League-Gothic.otf'); 
 } 
-
-@font-face { 
- font-family: 'Linden'; 
- src: url('LindenHill.otf'); 
-}
 
 @font-face { 
  font-family: 'Goudy'; 
@@ -116,8 +106,12 @@ header {
   right:0;
   height:20px;
   padding:10px;
-  background-color:rgba(15, 15, 15, 0.9);
+  background-color:#000;
   border-bottom:1px solid #333;
+}
+
+.rgba header {
+  background-color:rgba(15, 15, 15, 0.9);
 }
 
 header h1 {
@@ -166,9 +160,9 @@ div.panel p.click-hint span{
   font-size:2em;
   color:#111;
   transition:all 0.5s ease-out;
-   -webkit-transition: all 0.5s ease-out;
-   -moz-transition: all 0.5s ease-out;
-   -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 
 div.panel:hover p.click-hint span, .touch div.panel p.click-hint span{
@@ -195,22 +189,22 @@ div.question h2 {
 }
 
 div.question h2 { color: #FFF; 
- text-shadow: 1px 1px #333, 2px 2px #333, 3px 3px #0092CB, 4px 4px #0092CB;
- transition:all 0.12s ease-out;
+  text-shadow: 1px 1px #333, 2px 2px #333, 3px 3px #0092CB, 4px 4px #0092CB;
+  transition:all 0.12s ease-out;
   -webkit-transition: all 0.12s ease-out;
   -moz-transition: all 0.12s ease-out;
   -o-transition: all 0.12s ease-out;
 }
 
 div.question:hover h1 {
- position: relative;
- top: -3px; left: -3px;
- text-shadow: 1px 1px #0092CB, 2px 2px #0092CB, 3px 3px #0092CB, 4px 4px #0092CB, 5px 5px #0092CB, 6px 6px #0092CB;
+  position: relative;
+  top: -3px; left: -3px;
+  text-shadow: 1px 1px #0092CB, 2px 2px #0092CB, 3px 3px #0092CB, 4px 4px #0092CB, 5px 5px #0092CB, 6px 6px #0092CB;
 }
 
 div.answer {
- background-color:#FFF;
- color:#000;
+  background-color:#FFF;
+  color:#000;
 }
 
 div.answer div.inner {
@@ -221,26 +215,26 @@ div.answer div.inner {
 }
 
 div.answer h2 {
- color:#000;
- text-align:center;
- font-weight:bold;
- font-size:40em;
- font-family:"League", "Helvetica Neue", Helvetica, Arial;
- text-transform:uppercase;
- position:relative;
- margin:0;
- padding:0;
- text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
- transition:all 0.12s ease-out;
+  color:#000;
+  text-align:center;
+  font-weight:bold;
+  font-size:40em;
+  font-family:"League", "Helvetica Neue", Helvetica, Arial;
+  text-transform:uppercase;
+  position:relative;
+  margin:0;
+  padding:0;
+  text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+  transition:all 0.12s ease-out;
   -webkit-transition: all 0.12s ease-out;
   -moz-transition: all 0.12s ease-out;
   -o-transition: all 0.12s ease-out;
 }
 
 div.answer:hover h2 {
- position: relative;
- top: -3px; left: -3px;
- text-shadow: 10px 10px #fe4902, 11px 11px #fe4902, 12px 12px #fe4902, 13px 13px #fe4902, 14px 14px #fe4902, 15px 15px #fe4902;
+  position: relative;
+  top: -3px; left: -3px;
+  text-shadow: 10px 10px #fe4902, 11px 11px #fe4902, 12px 12px #fe4902, 13px 13px #fe4902, 14px 14px #fe4902, 15px 15px #fe4902;
 }
 
 div.reasons {
@@ -251,27 +245,22 @@ div.reasons div.inner {
 }
 
 div.reasons p {
- font-family:Times;
- font-size:3em;
- line-height:1.5;
- margin-bottom:20px;
+  font-family:Times;
+  font-size:3em;
+  line-height:1.5;
+  margin-bottom:20px;
 }
 
 div.reasons p em {
- font-style:italic; 
+  font-style:italic; 
 }
 
 div.reasons div.inner {
- margin-left:auto;
- margin-right:auto;
- width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
 }
 
-div.photo {
-  background-size: 100%;
-  background-repeat:no-repeat;
-  background-origin: content;
-}
 div.photo p.caption {
   font-weight:bold;
   font-family:"Goudy", Georgia, Times;
@@ -280,10 +269,15 @@ div.photo p.caption {
   width:400px;
   margin-left:auto;
   margin-right:30px;
+  position:absolute;
+  right:0;
+  top:30%;
 }
 
 div.photo div.inner {
-  padding-top:20%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
 }
 
 div.photo p.attribution {
@@ -297,23 +291,22 @@ div.photo p.attribution a {
 
 div.fire {
   background-color:#000;
-  background-image: url(../images/fire.jpg);
 }
+
+div.photo img {
+  width:100%;
+}
+
 div.fire p.caption{
   color:#FFF;
   text-shadow:1px 1px 3px #000;
 }
-
-
 div.attack {
   background-color:#FFF;
-  background-image:url(../images/bombs.jpg);
 }
-
 div.attack p.caption {
-  padding-top:200px;
-  color:#000;
-  text-shadow:1px 1px 3px #FFF;
+  color:#FFF;
+  text-shadow:1px 1px 3px #000;
 }
 
 @media all and (orientation:portrait) { 

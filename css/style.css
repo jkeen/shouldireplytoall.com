@@ -81,14 +81,26 @@ button {  width: auto; overflow: visible; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-@font-face { 
- font-family: 'League'; 
- src: url('League-Gothic.otf'); 
-} 
+@font-face {
+  font-family: 'League';
+  src: url('league_gothic-webfont.eot');
+  src: url('league_gothic-webfont.eot?iefix') format('eot'),
+       url('league_gothic-webfont.woff') format('woff'),
+       url('league_gothic-webfont.ttf') format('truetype'),
+       url('league_gothic-webfont.svg#webfontwI4xajes') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@font-face { 
- font-family: 'Goudy'; 
- src: url('OFLGoudyStM.otf'); 
+@font-face {
+  font-family: 'Goudy';
+  src: url('oflgoudystm-webfont.eot');
+  src: url('oflgoudystm-webfont.eot?iefix') format('eot'),
+       url('oflgoudystm-webfont.woff') format('woff'),
+       url('oflgoudystm-webfont.ttf') format('truetype'),
+       url('oflgoudystm-webfont.svg#webfontw5CeXLKC') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -305,8 +317,8 @@ div.attack {
   background-color:#FFF;
 }
 div.attack p.caption {
-  color:#FFF;
-  text-shadow:1px 1px 3px #000;
+  color:#000;
+  text-shadow:1px 1px 3px #FFF;
 }
 
 @media all and (orientation:portrait) { 

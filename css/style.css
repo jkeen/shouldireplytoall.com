@@ -129,6 +129,7 @@ header {
 header h1 {
   color:#555;
   text-transform:uppercase;
+  font-weight:normal;
   font-family:"League", "Helvetica Neue", Helvetica, Arial;
   font-size:2em;
 }

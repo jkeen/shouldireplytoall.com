@@ -156,6 +156,7 @@ header h1 a:hover {
 div.panel {
   position:relative;
   cursor:pointer;
+  height:600px;
 }
 
 div.panel div.inner{

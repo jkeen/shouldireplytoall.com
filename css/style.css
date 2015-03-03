@@ -141,7 +141,7 @@ header h1 a {
 
 header h1 span {
   float:right;
-  color:#333;
+  color:#555;
 }
 
 header h1 a:hover {
@@ -254,15 +254,60 @@ div.answer:hover h2 {
 div.reasons {
   background-color:#F7F7F7;
 }
+
+div.made-by p a {
+  color:#FFF;
+  border-bottom:2px solid #fe4902;
+  text-decoration:none;
+}
+
+div.made-by a:hover {
+  color:#CCC;
+  border-bottom:5px solid #fe4902;
+}
+
 div.reasons div.inner {
   padding-top:20%;
 }
 
 div.reasons p {
   font-family:Times;
-  font-size:3em;
+  font-size:4em;
   line-height:1.5;
   margin-bottom:20px;
+}
+
+div.made-by {
+  font-family:"Georgia";
+  background-color:#0092CB;
+  color:#FFF;
+}
+
+div.social-buttons h2{
+  background-color:#333;
+  color:#FFF;
+  font-weight:bold;
+  text-align:left;
+  font-weight:bold;
+  font-size:4em;
+}
+
+.social-buttons {
+  margin:2em 0 0 0;
+  padding:0;
+}
+.social-buttons ul {
+  margin:auto auto;
+  width:100%;
+}
+.social-buttons li {
+   list-style-type: none;
+   display: inline-block;
+   vertical-align: top;
+ }
+
+.fb-like > span {
+  vertical-align: top!important;
 }
 
 div.reasons p em {
@@ -272,7 +317,8 @@ div.reasons p em {
 div.reasons div.inner {
   margin-left:auto;
   margin-right:auto;
-  width:90%;
+  width:80%;
+  max-width:800px;
 }
 
 div.photo p.caption {
@@ -280,12 +326,6 @@ div.photo p.caption {
   font-family:"Goudy", Georgia, Times;
   font-size:5em;
   color:#FFF;
-  width:400px;
-  margin-left:auto;
-  margin-right:30px;
-  position:absolute;
-  right:0;
-  top:30%;
 }
 
 div.photo div.inner {
@@ -305,23 +345,47 @@ div.photo p.attribution a {
 
 div.fire {
   background-color:#000;
+  background: #000 url(/images/fire.jpg) no-repeat center center;
+  background-size:cover;
+}
+div.fire img {
+  opacity:0;
+  visibility: hidden;
 }
 
 div.photo img {
   width:100%;
 }
 
-div.fire p.caption{
+div.photo p.caption{
   color:#FFF;
   text-shadow:1px 1px 3px #000;
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  top:50%;
+  text-align:center;
+  font-weight:bold;
+  font-size:7em;
+  font-family:"League", "Helvetica Neue", Helvetica, Arial;
+  text-transform:uppercase;
 }
 div.attack {
   background-color:#FFF;
 }
-div.attack p.caption {
-  color:#000;
-  text-shadow:1px 1px 3px #FFF;
+
+div.attack {
+  background-color:#000;
+  background: #000 url(/images/bombs.jpg) no-repeat center center;
+  background-size:cover;
 }
+div.attack img {
+  opacity:0;
+  visibility: hidden;
+}
+
+
 
 @media all and (orientation:portrait) { 
   
@@ -355,8 +419,9 @@ div.attack p.caption {
     padding-bottom:10px;
   }
   div.photo p.attribution {
-    text-align:right;
-    position:static;
+    position:absolute;
+    left:0;
+    bottom:0;
     padding:1em;
   }
 

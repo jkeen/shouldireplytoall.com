@@ -10,18 +10,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>Should I Reply To All?</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
+  <meta name="author" content="Jeff Keen">
   <meta property="og:title" content="Should I Reply To All?" />
   <meta property="og:url" content="http://shouldireplytoall.com" />
   <meta property="og:image" content="http://shouldireplytoall.com/images/for-sharing.jpg"/>
   <meta property="og:description" content="A question to consider when replying to emails.">
   <meta name="description" content="A question to consider when replying to emails.">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="js/libs/modernizr-1.6.min.js"></script>
@@ -98,7 +97,7 @@
           <div class="social-buttons">
             <ul>
               <li class="twitter">         
-               <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shouldireplytoall.com" data-text="Priority: High, Re: Re: Re: Re: Re: by @realjeffkeen" data-related="realjeffkeen" data-hashtags="email" data-dnt="true">Tweet</a>
+               <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://shouldireplytoall.com" data-text="A question to consider when replying to emails." data-via="realjeffkeen" data-related="realjeffkeen" data-dnt="true">Tweet</a>
                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
                <li class="facebook"><div class="fb-like" data-href="http://shouldireplytoall.com" data-layout="button_count" data-action="like" data-share="true" data-width="450" data-color-scheme="dark" data-show-faces="false"></li>
              </ul>

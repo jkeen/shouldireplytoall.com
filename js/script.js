@@ -22,7 +22,7 @@
   if (!Modernizr.touch){
     function setHeight() {
       var height = $(window).height();
-      $("div.panel").css("height", height);
+      $("div.panel").css("min-height", height);
     }
     setHeight();
     $(window).resize(function() { setHeight() });

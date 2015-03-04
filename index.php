@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="js/libs/modernizr-1.6.min.js"></script>
+  <script src="js/libs/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -78,7 +78,6 @@
           <p class="caption">Or we're currently under attack.</p>
         </div>
       </div>
-      
       <div class="panel reasons third">
         <div class="inner">
           <p>Otherwise, please, no.</p>
@@ -87,10 +86,9 @@
 
         </div>
       </div>
-
       <div class="panel made-by fourth reasons">
         <div class="inner">   
-          <p>Made by <a href="http://jeffkeen.me">Jeff Keen</a>, who once got so annoyed by someone replying to all that he made this helpful website.</p>
+          <p>Made by <a href="http://jeffkeen.me">Jeff Keen</a>, who once got so annoyed by a coworker replying to all that he made this helpful website.</p>
 
           <br/>
           <br/>

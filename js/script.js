@@ -1,24 +1,12 @@
-(function($){  
-  $("div.panel").each(function(index) {
-    $(this).bind('click', function() {
-      if (Modernizr.touch) {
-        $(window).scrollTo($(this).next());
-      }
-      else {
-        $(window).scrollTo($(this).next(), 300);
-      }
-    });
+(function($){
+  $("div.panel").on("click", function() {
+    $(window).scrollTo($(this).next(), (Modernizr.touch ? 0 : 300));
+  })
+
+  $("header h1 a").on('click', function() {
+    $(window).scrollTo($('div.panel.first'), (Modernizr.touch ? 0 : 300));
   });
-  
-  $("header h1 a").click(function() { 
-    if (Modernizr.touch) {
-      $(window).scrollTo($('div.panel.first'));
-    }
-    else {
-      $(window).scrollTo($('div.panel.first'), 300);
-    }
-  });
-  
+
   if (!Modernizr.touch){
     function setHeight() {
       var height = $(window).height();
